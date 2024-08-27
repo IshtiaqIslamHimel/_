@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/IMG_3736-min.jpg">
     <title>IshTiaQ_</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -11,7 +12,7 @@
     <div class="hero">
       <nav>
         <ul class="sidebar">
-          <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+          <li class="menu-button" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
           <li><a href="#">Resume</a></li>
           <li><a href="#">Home</a></li>
           <li><a href="#">Projects</a></li>
@@ -23,14 +24,14 @@
           <li class="hideOnMobile"><a href="#">Home</a></li>
           <li class="hideOnMobile"><a href="#">Projects</a></li>
           <li class="hideOnMobile"><a href="#">Contact</a></li>
-          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+          <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 96 960 960" width="40"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
         </ul>
     </nav>
 
     <div class="hero_hero">
 
       <div class="hero_hading">
-        <h1>IshTiaQ IslaM</h1>
+        <h1><span class="auto-type"></span></h1>
       </div>
 
       <div class="hero_info">
@@ -155,5 +156,16 @@
 
   </div>
     <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+      var typed = new Typed(".auto-type",{
+        strings : ["ishtiaq islam.."],
+        typeSpeed : 200,
+        backSpeed : 200,
+        loop : true
+      })
+    </script>
 </body>
 </html>
