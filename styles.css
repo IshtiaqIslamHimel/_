@@ -80,7 +80,17 @@ nav{
   }
   .menu-button{
     display: none;
+    
   }
+
+  .menu-button svg  {
+    fill:  #d4cebb;
+  }
+ 
+  .menu-button svg:hover{
+    fill: #f0f0f0;
+  }
+
   @media(max-width: 800px){
     .hideOnMobile{
       display: none;
@@ -145,6 +155,7 @@ nav{
 
   .hero_content{
     display: flex;
+    justify-content: center;
     background-color: #C9DABF;
     height: 385px;
     margin: 50px 100px 50px 0;
@@ -155,27 +166,27 @@ nav{
     border-bottom-right-radius: 433px;
     background-image: linear-gradient(to right, #24242488 0.1px, transparent 1px),
                       linear-gradient(to bottom, #24242488 0.1px, transparent 1px);
-    background-size: 32px 30px
+    background-size: 32px 30px;
     
   }
-
-.hero_me{
-  height: 385px;
-  width: 345px;
-  min-width: auto;
-  min-height: auto;
-  margin: 0 0 -5px 0;
-  display: flex;
-  align-items: flex-end;
-}
-
-.hero_me img {
-  height: 345px;
-  width: 345px;
-  min-width: auto;
-  min-height: auto;
-  display: block;
-  overflow: clip;
+  
+  .hero_me{
+    height: 385px;
+    width: 345px;
+    min-width: auto;
+    min-height: auto;
+    margin: 0 0 -5px 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  
+  .hero_me img {
+    height: 345px;
+    width: 345px;
+    min-width: auto;
+    min-height: auto;
+    overflow: clip;
 
 }
 
